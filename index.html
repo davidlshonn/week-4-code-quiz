@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="Assets/styles.css">
-</head>
-<body>
+    <!--External CSS-->
+    <link rel="stylesheet" href="Assets/styles.css" />
+  </head>
+  <!--Main body of content-->
+  <body>
+    <!--Main container div-->
     <div id="container" class="container">
-
-        <div id="starterCode">
-            <h2>Click Start below to start the quiz</h2>
-            <button id="start-btn" class="start-btn btn" onclick="setNextQuestion()">Start</button>
-        </div>
-
-        <div id="countdown"></div>
+      <div id="starterCode">
+        <h2>Click Start below to start the quiz</h2>
+        <button
+          id="start-btn"
+          class="start-btn btn"
+          onclick="setNextQuestion()"
+        >
+          Start
+        </button>
+      </div>
+      <!--Main Container Content-->
+      <div id="countdown"></div>
+      <p>What are your initials? <input id="userInput" /></p>
       <div id="question-container">
-          <div id="countdown"></div>
+        <div id="countdown"></div>
         <div id="question">Question</div>
         <h3 id="questionAsked"></h3>
-        <div id="answer-buttons" class="btn-grid">
-        </div>
+        <div id="answer-buttons" class="btn-grid"></div>
       </div>
-      
-      <div id="resultsContainer" class="resultsContainer">
-          <h1>Leaderboard</h1>
-      </div>
-
     </div>
-   <script src="./Assets/script.js"></script>
+    <!--Results Container div-->
+    <div id="resultsContainer" class="resultsContainer">
+      <h2>Leaderboard</h2>
+      <p><span id="userInitials"></span> Score: <span id="score"></span></p>
+      <div id="user-score"></div>
+    </div>
+    <!--External JS-->
+    <script src="./Assets/script.js"></script>
   </body>
 </html>

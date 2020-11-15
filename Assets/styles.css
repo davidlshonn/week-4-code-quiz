@@ -1,67 +1,62 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  :root {
-    --hue-neutral: 200;
-    --hue-wrong: 0;
-    --hue-correct: 145;
-  }
-  
-  body {
-    --hue: var(--hue-neutral);
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    width: 800px;
-    max-width: 80%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 3px;
-    padding: 10px;
-    box-shadow: 0px 0px 3px 3px rgba(99, 99, 99, 0.158);
+/* Initial Styling*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-  
-  .btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 5px;
-    margin: 10px 0;
-  }
-  
-  .btn {
-    --hue: var(--hue-neutral);
-    background-color: lightgray;
-    border: none;
-    border-radius: 2px;
+
+/* Main Content styling*/
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
-  
-  .btn:hover {
-    box-shadow: 0px 0px 1px 1px rgba(99, 99, 99, 0.274);  }
-  
-  .btn.correct {
-    --hue: var(--hue-correct);
-  }
-  
-  .btn.wrong {
-    --hue: var(--hue-wrong);
-  }
-  
-  .start-btn, .next-btn {
-    font-weight: bold;
-    padding: 10px 20px;
-  }
-  
-  .controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 0px 0px 3px 3px rgba(99, 99, 99, 0.158);
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5px;
+  margin: 10px 0;
+}
+
+/* Button styles*/
+.btn {
+  background-color: lightgray;
+  border: none;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 1px 1px rgba(99, 99, 99, 0.274);
+}
+
+.start-btn {
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+/* Results container styles*/
+.resultsContainer {
+  width: 800px;
+  max-width: 80%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 0px 0px 3px 3px rgba(83, 21, 21, 0.158);
+  display: none;
+}
