@@ -28,11 +28,11 @@ function startGame() {
   questionContainerElement.style.display = "block";
   setNextQuestion();
 }
-
+var timeleft;
 function setNextQuestion() {
   //Timer
 
-  var timeleft = 60;
+ timeleft = 60;
 
   var downloadTimer = setInterval(function function1() {
     document.getElementById("countdown").innerHTML =
