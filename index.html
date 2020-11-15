@@ -8,11 +8,15 @@
 </head>
 <body>
     <div class="container">
+
         <div id="starterCode">
             <h2>Click Start below to start the quiz</h2>
-            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="start-btn" class="start-btn btn" onclick="setNextQuestion()">Start</button>
         </div>
+
+        <div id="countdown"></div>
       <div id="question-container">
+          <div id="countdown"></div>
         <div id="question">Question</div>
         <h3 id="questionAsked"></h3>
         <div id="answer-buttons" class="btn-grid">
