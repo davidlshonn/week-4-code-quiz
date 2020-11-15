@@ -95,7 +95,6 @@ function function1() {
 }
 
 function setNextQuestion() {
-
   downloadTimer = setInterval(function1, 1000);
   //start timer and display the time remaining to the user
   showQuestion(questions[currentQuestionIndex]);
